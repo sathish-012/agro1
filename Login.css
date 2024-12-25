@@ -1,0 +1,134 @@
+body {
+    font-family: sans-serif;
+    background-color: #F0F0F0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    position: relative; /* To position video in the background */
+  }
+  
+  .container {
+    justify-content: center;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background to let video show through */
+    padding: 50px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 900px;
+    width: 120%;
+    z-index: 1; /* Ensures content is on top of the video */
+  }
+  
+  video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the entire screen */
+    z-index: -1; /* Puts video behind the content */
+  }
+  
+  h1 {
+    margin-bottom: 30px;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+  }
+  
+  input[type="text"]:focus,
+  input[type="password"]:focus {
+    outline: none;
+    border-color: #4CAF50;
+  }
+  
+  .login {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  
+  
+  .google-btn:hover {
+    background-color: #7bd82a;
+  }
+  
+  .google-btn img {
+    width: 20px; /* Icon width */
+  height: 20px; /* Icon height */
+  margin: 0 15px; /* Increase horizontal spacing */
+  display: inline-block; /* Keep icons inline */
+  }
+  
+  .logo {
+    width: 100%;
+    max-width: 450px;
+    margin-bottom: 20px;
+  }
+  
+  .error {
+    color: red;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .h1{
+    text-size-adjust: 100px;
+  
+  }
+  @media (max-width: 768px) {
+    .container {
+      padding: 20px;
+    }
+    
+    h1 {
+      font-size: 24px;
+    }
+    
+    input[type="text"],
+    input[type="password"] {
+      padding: 8px;
+    }
+    
+    button,
+    .google-btn {
+      width: 100%;
+    }
+  }
+  .G1{
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  .r1{
+    color: #0f8909;
+    font-size: 16px;
+  }
+  .e1{
+    font-size: 16px;
+  }
+  .p1{
+    font-size: 16px;
+  }
